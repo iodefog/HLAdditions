@@ -17,5 +17,6 @@
 #import "UIViewController+.h"
 #import "UIView+Additions.h"
 #import "M9Utilities.h"
+#import "EXTScope.h"
 
 #endif /* HLAdditions_h */

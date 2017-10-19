@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HLAdditions"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "A Category of NSArray+,NSDictionary+,UIColor+,NSDictionary+..."
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ DESC
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "HLAdditions/*.{h,m}"
+  s.source_files  = "Classes", "HLAdditions/*.{h,m}","HLAdditions/extobjc/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
