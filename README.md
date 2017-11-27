@@ -1,5 +1,10 @@
 # HLAdditions
 
+常用扩展及类
+
+-----
+
+``` objc
 //数组扩展，安全添加或者获取数组
 #import "NSArray+.h"
 
@@ -24,3 +29,5 @@
 
 // 预定义weaktify();
 #import "EXTScope.h"
+
+```
