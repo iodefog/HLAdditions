@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HLAdditions"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "A Category of NSArray+,NSDictionary+,UIColor+,NSDictionary+..."
 
   # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 	A Category of NSArray+,NSDictionary+,UIColor+,NSDictionary+,UIView+Additions,UIViewController+
 DESC
 
-  s.homepage     = "https://github.com/lihongli528628/HLAdditions"
+  s.homepage     = "https://github.com/iodefog/HLAdditions"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ DESC
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/lihongli528628/HLAdditions.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/iodefog/HLAdditions.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
