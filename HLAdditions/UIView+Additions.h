@@ -1,12 +1,12 @@
 //
-//  UIView+Additions.h
+//  UIView+HLAdditions.h
 //  Utility
 //
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (Additions)
+@interface UIView (HLAdditions)
 
 /**
  * Shortcut for frame.origin.x.

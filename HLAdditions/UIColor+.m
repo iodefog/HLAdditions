@@ -15,7 +15,7 @@
 #error ARCWeakRef requires iOS 5 and higher.
 #endif
 
-@implementation UIColor (M9Category)
+@implementation UIColor (HLCategory)
 
 - (UIColor *)inverseColor {
     

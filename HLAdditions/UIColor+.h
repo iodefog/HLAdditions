@@ -7,7 +7,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface UIColor (M9Category)
+@interface UIColor (HLCategory)
 
 - (UIColor *)inverseColor;
 

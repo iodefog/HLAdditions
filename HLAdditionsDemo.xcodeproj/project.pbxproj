@@ -14,13 +14,17 @@
 		C7D55DDB1F5CF90200BB7352 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D55DDA1F5CF90200BB7352 /* Assets.xcassets */; };
 		C7D55DDE1F5CF90200BB7352 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D55DDC1F5CF90200BB7352 /* LaunchScreen.storyboard */; };
 		C7E821461F98899C005D17EF /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = C7E821361F98899C005D17EF /* readme.md */; };
-		C7E821471F98899C005D17EF /* M9Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E821391F98899C005D17EF /* M9Utilities.m */; };
+		C7E821471F98899C005D17EF /* HLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E821391F98899C005D17EF /* HLUtilities.m */; };
 		C7E821481F98899C005D17EF /* NSArray+.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E8213B1F98899C005D17EF /* NSArray+.m */; };
 		C7E821491F98899C005D17EF /* NSDictionary+.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E8213D1F98899C005D17EF /* NSDictionary+.m */; };
-		C7E8214A1F98899C005D17EF /* NSStringExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E8213F1F98899C005D17EF /* NSStringExtend.m */; };
+		C7E8214A1F98899C005D17EF /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E8213F1F98899C005D17EF /* NSString+Extend.m */; };
 		C7E8214B1F98899C005D17EF /* UIColor+.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E821411F98899C005D17EF /* UIColor+.m */; };
 		C7E8214C1F98899C005D17EF /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E821431F98899C005D17EF /* UIView+Additions.m */; };
 		C7E8214D1F98899C005D17EF /* UIViewController+.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E821451F98899C005D17EF /* UIViewController+.m */; };
+		C7F6BB1D1FEA3EB1009A0EEA /* NSData+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6BB1C1FEA3EB1009A0EEA /* NSData+Additions.m */; };
+		C7F6BB201FEA40B8009A0EEA /* NSDate+.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6BB1E1FEA40B7009A0EEA /* NSDate+.m */; };
+		C7F6BB231FEA420B009A0EEA /* UIImage+.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F6BB221FEA420B009A0EEA /* UIImage+.m */; };
+		C7F6BB251FEA43C1009A0EEA /* HLAdditions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C7F6BB241FEA43C1009A0EEA /* HLAdditions.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,20 +42,27 @@
 		C7E821351F98899C005D17EF /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = metamacros.h; sourceTree = "<group>"; };
 		C7E821361F98899C005D17EF /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		C7E821371F98899C005D17EF /* HLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLAdditions.h; sourceTree = "<group>"; };
-		C7E821381F98899C005D17EF /* M9Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M9Utilities.h; sourceTree = "<group>"; };
-		C7E821391F98899C005D17EF /* M9Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M9Utilities.m; sourceTree = "<group>"; };
+		C7E821381F98899C005D17EF /* HLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLUtilities.h; sourceTree = "<group>"; };
+		C7E821391F98899C005D17EF /* HLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLUtilities.m; sourceTree = "<group>"; };
 		C7E8213A1F98899C005D17EF /* NSArray+.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+.h"; sourceTree = "<group>"; };
 		C7E8213B1F98899C005D17EF /* NSArray+.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+.m"; sourceTree = "<group>"; };
 		C7E8213C1F98899C005D17EF /* NSDictionary+.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+.h"; sourceTree = "<group>"; };
 		C7E8213D1F98899C005D17EF /* NSDictionary+.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+.m"; sourceTree = "<group>"; };
-		C7E8213E1F98899C005D17EF /* NSStringExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringExtend.h; sourceTree = "<group>"; };
-		C7E8213F1F98899C005D17EF /* NSStringExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringExtend.m; sourceTree = "<group>"; };
+		C7E8213E1F98899C005D17EF /* NSString+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
+		C7E8213F1F98899C005D17EF /* NSString+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
 		C7E821401F98899C005D17EF /* UIColor+.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+.h"; sourceTree = "<group>"; };
 		C7E821411F98899C005D17EF /* UIColor+.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+.m"; sourceTree = "<group>"; };
 		C7E821421F98899C005D17EF /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
 		C7E821431F98899C005D17EF /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 		C7E821441F98899C005D17EF /* UIViewController+.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+.h"; sourceTree = "<group>"; };
 		C7E821451F98899C005D17EF /* UIViewController+.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+.m"; sourceTree = "<group>"; };
+		C7F6BB1B1FEA3EB0009A0EEA /* NSData+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Additions.h"; sourceTree = "<group>"; };
+		C7F6BB1C1FEA3EB1009A0EEA /* NSData+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Additions.m"; sourceTree = "<group>"; };
+		C7F6BB1E1FEA40B7009A0EEA /* NSDate+.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+.m"; sourceTree = "<group>"; };
+		C7F6BB1F1FEA40B7009A0EEA /* NSDate+.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+.h"; sourceTree = "<group>"; };
+		C7F6BB211FEA420B009A0EEA /* UIImage+.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+.h"; sourceTree = "<group>"; };
+		C7F6BB221FEA420B009A0EEA /* UIImage+.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+.m"; sourceTree = "<group>"; };
+		C7F6BB241FEA43C1009A0EEA /* HLAdditions.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HLAdditions.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +95,7 @@
 		C7D55DCD1F5CF90200BB7352 /* HLAdditionsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C7F6BB241FEA43C1009A0EEA /* HLAdditions.podspec */,
 				C7D55DD11F5CF90200BB7352 /* AppDelegate.h */,
 				C7D55DD21F5CF90200BB7352 /* AppDelegate.m */,
 				C7D55DD41F5CF90200BB7352 /* ViewController.h */,
@@ -111,16 +123,22 @@
 			children = (
 				C7E821331F98899C005D17EF /* extobjc */,
 				C7E821371F98899C005D17EF /* HLAdditions.h */,
-				C7E821381F98899C005D17EF /* M9Utilities.h */,
-				C7E821391F98899C005D17EF /* M9Utilities.m */,
+				C7E821381F98899C005D17EF /* HLUtilities.h */,
+				C7E821391F98899C005D17EF /* HLUtilities.m */,
 				C7E8213A1F98899C005D17EF /* NSArray+.h */,
 				C7E8213B1F98899C005D17EF /* NSArray+.m */,
 				C7E8213C1F98899C005D17EF /* NSDictionary+.h */,
 				C7E8213D1F98899C005D17EF /* NSDictionary+.m */,
-				C7E8213E1F98899C005D17EF /* NSStringExtend.h */,
-				C7E8213F1F98899C005D17EF /* NSStringExtend.m */,
+				C7E8213E1F98899C005D17EF /* NSString+Extend.h */,
+				C7E8213F1F98899C005D17EF /* NSString+Extend.m */,
+				C7F6BB1B1FEA3EB0009A0EEA /* NSData+Additions.h */,
+				C7F6BB1C1FEA3EB1009A0EEA /* NSData+Additions.m */,
 				C7E821401F98899C005D17EF /* UIColor+.h */,
 				C7E821411F98899C005D17EF /* UIColor+.m */,
+				C7F6BB1F1FEA40B7009A0EEA /* NSDate+.h */,
+				C7F6BB1E1FEA40B7009A0EEA /* NSDate+.m */,
+				C7F6BB211FEA420B009A0EEA /* UIImage+.h */,
+				C7F6BB221FEA420B009A0EEA /* UIImage+.m */,
 				C7E821421F98899C005D17EF /* UIView+Additions.h */,
 				C7E821431F98899C005D17EF /* UIView+Additions.m */,
 				C7E821441F98899C005D17EF /* UIViewController+.h */,
@@ -201,6 +219,7 @@
 				C7D55DDE1F5CF90200BB7352 /* LaunchScreen.storyboard in Resources */,
 				C7D55DDB1F5CF90200BB7352 /* Assets.xcassets in Resources */,
 				C7E821461F98899C005D17EF /* readme.md in Resources */,
+				C7F6BB251FEA43C1009A0EEA /* HLAdditions.podspec in Resources */,
 				C7D55DD91F5CF90200BB7352 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,13 +233,16 @@
 			files = (
 				C7D55DD61F5CF90200BB7352 /* ViewController.m in Sources */,
 				C7E821481F98899C005D17EF /* NSArray+.m in Sources */,
+				C7F6BB201FEA40B8009A0EEA /* NSDate+.m in Sources */,
 				C7D55DD31F5CF90200BB7352 /* AppDelegate.m in Sources */,
 				C7E8214C1F98899C005D17EF /* UIView+Additions.m in Sources */,
 				C7E8214D1F98899C005D17EF /* UIViewController+.m in Sources */,
-				C7E821471F98899C005D17EF /* M9Utilities.m in Sources */,
+				C7F6BB231FEA420B009A0EEA /* UIImage+.m in Sources */,
+				C7F6BB1D1FEA3EB1009A0EEA /* NSData+Additions.m in Sources */,
+				C7E821471F98899C005D17EF /* HLUtilities.m in Sources */,
 				C7E821491F98899C005D17EF /* NSDictionary+.m in Sources */,
 				C7E8214B1F98899C005D17EF /* UIColor+.m in Sources */,
-				C7E8214A1F98899C005D17EF /* NSStringExtend.m in Sources */,
+				C7E8214A1F98899C005D17EF /* NSString+Extend.m in Sources */,
 				C7D55DD01F5CF90200BB7352 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

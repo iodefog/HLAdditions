@@ -6,11 +6,13 @@
 
 #import <CommonCrypto/CommonDigest.h>
 #import <CoreText/CoreText.h>
-#import "NSStringExtend.h"
-#import "M9Utilities.h"
+#import "NSString+Extend.h"
+#import "NSData+Additions.h"
+#import "HLUtilities.h"
 
 #pragma mark -
-@implementation NSString(ExtendedForUrlComponents)
+
+@implementation NSString(HLExtendedForUrlComponents)
 - (NSString *)stringByAppendingUrlComponent:(NSString *)urlComponent
 {	
 	if(urlComponent == nil || [urlComponent length] == 0)
@@ -139,7 +141,7 @@
 @end
 
 #pragma mark -	
-@implementation NSString(MD5Extended)
+@implementation NSString(HLMD5Extended)
 + (NSString *)stringWithUUIDGenerated
 {
 	CFUUIDRef uuid = CFUUIDCreate(NULL);
@@ -181,16 +183,104 @@
     return md5String;
 }
 
-//- (NSString*)md5Hash 
-//{
-//	return [[self dataUsingEncoding:NSUTF8StringEncoding] md5Hash];
-//}
+- (NSString*)md5Hash
+{
+    return [[self dataUsingEncoding:NSUTF8StringEncoding] md5Hash];
+}
 @end
 
+#pragma mark - NSString+Base64
 
+static char base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+
+@implementation NSString (Base64)
+
++ (instancetype)stringWithBase64Data:(NSData *)base64Data {
+    return [self stringWithBase64Data:base64Data lineLength:0];
+}
+
++ (instancetype)stringWithBase64Data:(NSData *)base64Data lineLength:(int)lineLength {
+    return [self stringWithBase64Data:base64Data lineLength:lineLength lineFeed:@"\n"];
+}
+
++ (instancetype)stringWithBase64Data:(NSData *)base64Data lineLength:(int)lineLength lineFeed:(NSString *)lineFeed {
+    unsigned long ixtext, lentext;
+    long ctremaining;
+    unsigned char input[3], output[4];
+    short i, charsonline = 0, ctcopy;
+    const unsigned char *raw;
+    NSMutableString *result;
+    
+    lentext = [base64Data length];
+    
+    if (lentext < 1) {
+        return @"";
+    }
+    
+    result = [NSMutableString stringWithCapacity:lentext];
+    
+    raw = [base64Data bytes];
+    
+    ixtext = 0;
+    
+    while (true) {
+        ctremaining = lentext - ixtext;
+        
+        if (ctremaining <= 0) {
+            break;
+        }
+        
+        for (i = 0; i < 3; i++) {
+            unsigned long ix = ixtext + i;
+            
+            if (ix < lentext) {
+                input[i] = raw[ix];
+            }
+            else {
+                input[i] = 0;
+            }
+        }
+        
+        output[0] = (input[0] & 0xFC) >> 2;
+        output[1] = ((input[0] & 0x03) << 4) | ((input[1] & 0xF0) >> 4);
+        output[2] = ((input[1] & 0x0F) << 2) | ((input[2] & 0xC0) >> 6);
+        output[3] = input[2] & 0x3F;
+        
+        ctcopy = 4;
+        
+        switch (ctremaining) {
+            case 1:
+                ctcopy = 2;
+                break;
+            case 2:
+                ctcopy = 3;
+                break;
+        }
+        
+        for (i = 0; i < ctcopy; i++) {
+            [result appendString:[NSString stringWithFormat:@"%c", base64EncodingTable[output[i]]]];
+        }
+        
+        for (i = ctcopy; i < 4; i++) {
+            [result appendString:@"="];
+        }
+        
+        ixtext += 3;
+        charsonline += 4;
+        
+        if (lineLength > 0 && charsonline >= lineLength && lineFeed.length) {
+            charsonline = 0;
+            [result appendString:lineFeed];
+        }
+    }
+    
+    return [self stringWithString:result];
+}
+
+@end
 
 #pragma mark -
-@implementation NSString (CoreTextExtention)
+@implementation NSString (HLCoreTextExtention)
 
 - (NSArray *)splitStringWithFont:(UIFont *)font constrainedToWidth:(CGFloat)lineWidth {
 	CGRect box = CGRectMake(0,0, lineWidth, CGFLOAT_MAX);
@@ -237,7 +327,7 @@
 
 
 #pragma mark -
-@implementation NSString (WhitespaceExtention)
+@implementation NSString (HLWhitespaceExtention)
 
 - (NSString *) trimmedString {
     NSString *trimmedString = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -265,7 +355,7 @@
 @end
 
 #pragma mark -
-@implementation NSString (HexString2Data)
+@implementation NSString (HLHexString2Data)
 - (NSData*)hexString2Data
 {
     if(self.length)
@@ -306,7 +396,7 @@
 
 
 #pragma mark -
-@implementation NSString (StringSizeExtention)
+@implementation NSString (HLStringSizeExtention)
 
 
 - (CGSize)stringSizeWithFont:(UIFont *)font {
@@ -377,7 +467,7 @@
 }
 
 @end
-@implementation NSString (Contains)
+@implementation NSString (HLContains)
 
 - (BOOL)containString:(NSString *)str {
     if (nil == str) return NO;

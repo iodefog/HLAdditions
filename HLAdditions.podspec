@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HLAdditions"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "A Category of NSArray+,NSDictionary+,UIColor+,NSDictionary+..."
 
   # This description is used to generate tags and improve search results.
@@ -117,8 +117,8 @@ DESC
   #  the lib prefix of their name.
   #
 
-   s.framework  = "UIKit"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  # s.framework  = "UIKit"
+  s.frameworks = "UIKit", "Foundation"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"

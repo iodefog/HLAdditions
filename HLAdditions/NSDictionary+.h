@@ -14,7 +14,7 @@ typedef id (^NSDictionaryObjectValidator)(id object);
  * Shortcuts for reading value for key
  * @see NSUserDefaults
  */
-@interface NSDictionary (Shortcuts)
+@interface NSDictionary (HLShortcuts)
 
 /**
  *  Detect CGFloat is float or double:
@@ -94,7 +94,7 @@ typedef id (^NSDictionaryObjectValidator)(id object);
 /**
  * Shortcuts for writing value for key
  */
-@interface NSMutableDictionary (Shortcuts)
+@interface NSMutableDictionary (HLShortcuts)
 
 /* C */
 - (void)setFloat:(float)value forKey:(id<NSCopying>)aKey;

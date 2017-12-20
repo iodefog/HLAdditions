@@ -15,7 +15,7 @@
 
 #import "NSArray+.h"
 
-@implementation NSArray (Shortcuts)
+@implementation NSArray (HLShortcuts)
 
 - (id)objectOrNilAtIndex:(NSUInteger)index {
     return [self containsIndex:index] ? [self objectAtIndex:index] : nil;
@@ -29,7 +29,7 @@
 
 #pragma mark -
 
-@implementation NSMutableArray (Shortcuts)
+@implementation NSMutableArray (HLShortcuts)
 
 - (void)addObjectOrNil:(id)anObject {
     if (anObject) {
@@ -57,7 +57,7 @@
 
 #pragma mark - SubArray
 
-@implementation NSArray (SubArray)
+@implementation NSArray (HLSubArray)
 
 - (NSArray *)subArrayToIndex:(NSUInteger)anIndex {
     if (anIndex > self.count) {

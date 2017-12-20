@@ -6,7 +6,7 @@
 #import <UIKit/UIKit.h>
 
 #pragma mark -
-@interface NSString(ExtendedForUrlComponents)
+@interface NSString(HLExtendedForUrlComponents)
 - (NSString *)stringByAppendingUrlComponent:(NSString *)urlComponent;
 - (NSString *)stringByAppendingUrlParameter:(NSString *)param forKey:(NSString *)key;
 - (NSString *)urlStringByAppendingUrlParameter:(NSString *)parameter forKey:(NSString *)key;
@@ -19,36 +19,47 @@
 - (BOOL)isEmailString;
 @end
 
-#pragma mark -
-@interface NSString(MD5Extended)
+#pragma mark - MD5
+@interface NSString(HLMD5Extended)
 + (NSString *)stringWithUUIDGenerated;
 + (NSString *)generatingMD5:(NSArray *)array;
 
 ////added ypc
-//- (NSString*)md5Hash;
+- (NSString*)md5Hash;
+@end
+
+
+#pragma mark - NSString+Base64
+
+@interface NSString (Base64)
+
++ (instancetype)stringWithBase64Data:(NSData *)base64Data;
++ (instancetype)stringWithBase64Data:(NSData *)base64Data lineLength:(int)lineLength;
++ (instancetype)stringWithBase64Data:(NSData *)base64Data lineLength:(int)lineLength lineFeed:(NSString *)lineFeed;
+
 @end
 
 
 #pragma mark -
-@interface NSString (CoreTextExtention)
+@interface NSString (HLCoreTextExtention)
 - (NSArray *)splitStringWithFont:(UIFont *)font constrainedToWidth:(CGFloat)lineWidth;
 @end
 
 
 #pragma mark -
-@interface NSString (WhitespaceExtention)
+@interface NSString (HLWhitespaceExtention)
 - (id) trimmedString;
 - (BOOL)isWhitespaceAndNewlines;
 - (BOOL)isEmptyOrWhitespace;
 @end
 
 #pragma mark -
-@interface NSString (HexString2Data)
+@interface NSString (HLHexString2Data)
 - (NSData*)hexString2Data;
 @end
 
 #pragma mark -
-@interface NSString (StringSizeExtention)
+@interface NSString (HLStringSizeExtention)
 
 - (CGSize)stringSizeWithFont:(UIFont *)font;
 
@@ -71,7 +82,7 @@
 @end
 
 #pragma mark -
-@interface NSString (Contains)
+@interface NSString (HLContains)
 
 - (BOOL)containString:(NSString *)str;
 

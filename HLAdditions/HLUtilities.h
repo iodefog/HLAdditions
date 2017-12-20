@@ -1,5 +1,5 @@
 //
-//  M9Utilities.h
+//  HLUtilities.h
 //  M9Dev
 //
 //  Created by iwill on 2013-06-26.
@@ -226,7 +226,7 @@ static inline void dispatch_async_background_queue(dispatch_block_t block) {
  * M9MakeCopy & @M9MakeCopyWithZone
  */
 
-@protocol M9MakeCopy <NSCopying>
+@protocol HLMakeCopy <NSCopying>
 
 - (void)makeCopy:(id)copy;
 

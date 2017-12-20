@@ -6,7 +6,7 @@
 
 #import "UIView+Additions.h"
 
-@implementation UIView (Additions)
+@implementation UIView (HLAdditions)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (CGFloat)left {

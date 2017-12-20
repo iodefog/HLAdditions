@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (M9Category)
+@interface UIViewController (HLCategory)
 
 @property(nonatomic, readonly, assign) CGFloat topMargin, bottomMargin;
 @property(nonatomic, readonly, assign) CGFloat topBarsHeight, bottomBarsHeight;

@@ -15,7 +15,7 @@
 
 #import "NSDictionary+.h"
 
-@implementation NSDictionary (Shortcuts)
+@implementation NSDictionary (HLShortcuts)
 
 - (float)floatForKey:(id)aKey {
     return [self floatForKey:aKey defaultValue:0.0f];
@@ -210,7 +210,7 @@
 
 #pragma mark -
 
-@implementation NSMutableDictionary (Shortcuts)
+@implementation NSMutableDictionary (HLShortcuts)
 
 - (void)setFloat:(float)value forKey:(id<NSCopying>)aKey {
     [self setObject:@(value) forKey:aKey];

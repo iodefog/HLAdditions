@@ -4,6 +4,8 @@
 
 -----
 
+
+
 ``` objc
 //数组扩展，安全添加或者获取数组
 #import "NSArray+.h"
@@ -29,5 +31,22 @@
 
 // 预定义weaktify();
 #import "EXTScope.h"
+
+```
+
+```
+#import "EXTScope.h"
+
+#import "NSArray+.h"
+#import "NSDictionary+.h"
+#import "UIColor+.h"
+#import "NSArray+.h"
+#import "NSData+Additions.h"
+#import "NSString+Extend.h"
+#import "UIViewController+.h"
+#import "UIView+Additions.h"
+#import "HLUtilities.h"
+#import "UIImage+.h"
+#import "NSDate+.h"
 
 ```
